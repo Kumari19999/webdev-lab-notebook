@@ -9,13 +9,54 @@
 }
 
 /* Use attribute selectors for the first part of the exercise */
+/* =========================
+   PART 1: Attribute Selectors
+   ========================= */
 
-li[class] {
-  color: var(--red);
+li[class="dog"] {
+  color: var(--teal);
 }
 
-/* Use descendant, child, and sibling selectors for the second part */
+li[id="cat"] {
+  color: var(--royalblue);
+}
 
-section li {
+li[class~="parrot"] {
+  color: var(--violet);
+}
+
+li[class="donkey"] {
   color: var(--green);
 }
+
+li[class="hedgehog"] {
+  color: var(--magenta);
+}
+
+/* =========================
+   PART 2: Parent & Sibling Selectors
+   ========================= */
+
+.list-food > ol > li:first-child {
+  color: var(--teal);
+}
+
+.list-food > ol > li:nth-child(2) {
+  color: var(--royalblue);
+}
+
+.first + li + li {
+  color: var(--violet);
+}
+
+
+.list-food > ol > li:nth-child(4) {
+  color: var(--magenta);
+}
+
+.list-cleaning ol li {
+  color: var(--green);
+}
+
+
+/* Use descendant, child, and sibling selectors for the second part */
