@@ -2,3 +2,15 @@
   width: 600px;
   margin: 40px auto;
 }
+
+/* =========================
+   Exercise 02 – Pseudo Elements
+   ========================= */
+
+.paragraph::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+}
