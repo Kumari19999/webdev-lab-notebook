@@ -1,6 +1,54 @@
+/* MOBILE FIRST (default styles) */
+
+body {
+  background: var(--purple);
+  color: var(--white);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 15px;
+}
+
+/* =========================
+   TABLET (768px and up)
+   ========================= */
+
+@media (min-width: 768px) {
+  body {
+    background: var(--orange);
+    color: var(--black);
+  }
+
+  nav {
+    flex-direction: row;
+  }
+}
+
+/* =========================
+   LAPTOP (1024px and up)
+   ========================= */
+
 @media (min-width: 1024px) {
   body {
     background: var(--green);
     color: var(--white);
+  }
+
+  nav {
+    justify-content: flex-start;
   }
 }
